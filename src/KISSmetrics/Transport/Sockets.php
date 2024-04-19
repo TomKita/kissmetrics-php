@@ -108,7 +108,7 @@ class Sockets implements Transport {
             curl_close($ch);
             throw new TransportException("cURL error: " . curl_error($ch));
         }
-        echo $url. '<br>';
+    
         curl_close($ch); // Close the cURL handle at the end of each loop iteration
     }
   }
